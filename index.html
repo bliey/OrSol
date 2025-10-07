@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p>This is a simple HTML document.</p>
     <script>
-        console.log("Hello, World!");
-    </script>  
-    
-</body>
+      // 判断是否为手机设备
+      if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        // 手机访问 → 跳转到 mobile.html
+        window.location.href = "mobile.html";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>标题</h1>
+    <p>这是一个简单的HTML文档。</p>
+    <script>
+      console.log("Hello, World!");
+    </script>
+  </body>
 </html>
